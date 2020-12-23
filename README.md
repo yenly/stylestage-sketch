@@ -4,6 +4,9 @@ Learn each [Modern CSS Solutions
 for Old CSS Problem](http://moderncss.dev/) lesson.
 Then use the technique (if relevant) on creating a [Style Stage](https://stylestage.dev/) theme for submission.
 
-Prep Work To Do:
-- [ ] Set up repo to deploy to gh-pages
-  - [ ] Look into github actions
+Prep Work
+- [x] Set up repo to deploy to gh-pages
+  - [x] Look into github actions
+  - [x] Set up github actions
+- [ ] Deep dive into SASS template
+  - [ ] wipe clean template styling
