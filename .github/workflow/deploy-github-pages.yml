@@ -6,13 +6,12 @@ on:
       - main
 
 jobs:
-  deploy:
+  deploy_ghpages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Deploy to Github Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          commit_message: ${{ github.event.head_commit.message }}
+      - uses: actions/checkout@v1
+      - run: echo $GITHUB_SHA >> public/index.html
+      - uses: maxheld83/ghpages@v0.3.0
+        env:
+          BUILD_DIR: public/
+          GH_PAT: ${{ secrets.GH_PAT }}
