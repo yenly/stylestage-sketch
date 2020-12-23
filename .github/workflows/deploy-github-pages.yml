@@ -3,15 +3,16 @@ name: Deploy to Github Pages
 on:
   push:
     branches:
-      - main
+      - main  # Set a branch name to trigger deployment
 
 jobs:
-  deploy_ghpages:
-    runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v1
-      - run: echo $GITHUB_SHA >> public/index.html
-      - uses: maxheld83/ghpages@v0.3.0
-        env:
-          BUILD_DIR: public/
-          GH_PAT: ${{ secrets.GH_PAT }}
+      - uses: actions/checkout@v2
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          commit_message: ${{ github.event.head_commit.message }}
