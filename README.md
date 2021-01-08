@@ -8,5 +8,5 @@ Prep Work
 - [x] Set up repo to deploy to gh-pages
   - [x] Look into github actions
   - [x] Set up github actions
-- [ ] Deep dive into SASS template
-  - [ ] wipe clean template styling
+- [x] Deep dive into SASS template
+  - [x] wipe clean template styling

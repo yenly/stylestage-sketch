@@ -4,6 +4,15 @@
 // Overrides just need placed prior to the theme import
 // For example:
 // $color-primary: #3a0;
+
+// temp layout helper -- start
+svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+// temp layout helper -- end
+
 @import "theme";
 @import "reset";
 @import "logomark";
@@ -19,3 +28,9 @@
 @import "profile";
 @import "footer";
 @import "links";
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
