@@ -10,3 +10,8 @@ Prep Work
   - [x] Set up github actions
 - [x] Deep dive into SASS template
   - [x] wipe clean template styling
+
+
+### Tools & Resources Used
+- [Hero Patterns](http://www.heropatterns.com/)
+- [CSS Tricks: A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
