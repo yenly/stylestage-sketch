@@ -16,6 +16,7 @@ body {
     "footer";
 }
 
+// temp layout helper -- start
 header,
 main,
 nav,
@@ -23,6 +24,7 @@ aside,
 footer {
   border: 3px dotted hotpink;
 }
+// temp layout helper -- end
 
 nav {
   grid-area: nav;
