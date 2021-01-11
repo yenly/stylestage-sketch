@@ -1,10 +1,15 @@
-h1:before {
-  font-family: 'Rough Puff';
-  content: 'Style Stage';
-  font-size: 3rem;
-  text-transform: uppercase;
+header {
+  h1:before {
+    display: block;
+    font-family: 'Rough Puff';
+    content: 'Style Stage';
+    font-size: 3.5rem;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-family: 'Scamper Free';
+    font-size: 1.125rem;
+  }
 }
 
-h1 {
-  // text-transform: lowercase;
-}

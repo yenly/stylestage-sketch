@@ -130,6 +130,7 @@ select {
 body {
   font-family: "Tragic Marker";
   font-size: 22px;
+  letter-spacing: 0.038rem;
 }
 
 h1 {
@@ -137,7 +138,7 @@ h1 {
 }
 
 h2, h3, h4, h5 {
-  font-family: "Sprightly Two";
+  font-family: "Ludicrous";
 }
 
 pre,
@@ -183,11 +184,16 @@ footer {
   grid-area: feature;
 }
 
-h1:before {
+header h1:before {
+  display: block;
   font-family: "Rough Puff";
   content: "Style Stage";
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
+}
+header h2 {
+  font-family: "Scamper Free";
+  font-size: 1.125rem;
 }
 
 nav ul {
