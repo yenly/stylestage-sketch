@@ -15,3 +15,4 @@ Prep Work
 ### Tools & Resources Used
 - [Hero Patterns](http://www.heropatterns.com/)
 - [CSS Tricks: A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [Free Fonts by Missy Meyers](https://missymeyer.com/category/freebies)
