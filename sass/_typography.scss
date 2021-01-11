@@ -1,0 +1,24 @@
+* {
+  font-feature-settings: "liga" on, "calt" on;
+  -webkit-font-feature-settings: "liga" on, "calt" on;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: 'Tragic Marker';
+  font-size: 22px;
+  letter-spacing: 0.038rem;
+}
+
+h1 {
+  font-family: 'King Basil';
+}
+
+h2, h3, h4, h5 {
+  font-family: 'Ludicrous';
+}
+
+pre,
+code {
+ font-family: Monaco, Monospace;
+}

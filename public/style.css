@@ -1,3 +1,45 @@
+@font-face {
+  font-family: "Tragic Marker";
+  src: url("/fonts/tragicmarker-webfont.woff2") format("woff2"), url("/fonts/tragicmarker-webfont.woff") format("woff");
+  font-weight: 400;
+  font-display: auto;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ludicrous";
+  src: url("/fonts/Ludicrous.woff") format("woff");
+  font-weight: 400;
+  font-display: auto;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sprightly Two";
+  src: url("/fonts/sprightly-two-webfont.woff2") format("woff2"), url("/fonts/sprightly-two-webfont.woff") format("woff");
+  font-weight: 400;
+  font-display: auto;
+  font-style: normal;
+}
+@font-face {
+  font-family: "King Basil";
+  src: url("/fonts/king-basil-lite-webfont.woff2") format("woff2"), url("/fonts/king-basil-lite-webfont.woff") format("woff");
+  font-weight: 400;
+  font-display: auto;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Scamper Free";
+  src: url("/fonts/scamper-free-webfont.woff2") format("woff2"), url("/fonts/scamper-free-webfont.woff") format("woff");
+  font-weight: 400;
+  font-display: auto;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rough Puff";
+  src: url("/fonts/rough-puff-webfont.woff2") format("woff2"), url("/fonts/rough-puff-webfont.woff") format("woff");
+  font-weight: 400;
+  font-display: auto;
+  font-style: normal;
+}
 svg {
   height: 1rem;
   width: 1rem;
@@ -79,6 +121,31 @@ select {
     scroll-behavior: auto !important;
   }
 }
+* {
+  font-feature-settings: "liga" on, "calt" on;
+  -webkit-font-feature-settings: "liga" on, "calt" on;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Tragic Marker";
+  font-size: 22px;
+  letter-spacing: 0.038rem;
+}
+
+h1 {
+  font-family: "King Basil";
+}
+
+h2, h3, h4, h5 {
+  font-family: "Ludicrous";
+}
+
+pre,
+code {
+  font-family: Monaco, Monospace;
+}
+
 body {
   background-color: #fcfcfc;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%2370d6ff' fill-opacity='0.14'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -117,9 +184,25 @@ footer {
   grid-area: feature;
 }
 
+header h1:before {
+  display: block;
+  font-family: "Rough Puff";
+  content: "Style Stage";
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+header h2 {
+  font-family: "Scamper Free";
+  font-size: 1.125rem;
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
+}
+nav a {
+  font-family: "Scamper Free";
+  text-transform: uppercase;
 }
 
 .skip-link {
