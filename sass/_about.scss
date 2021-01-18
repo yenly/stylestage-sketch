@@ -1,7 +1,86 @@
-// idea to come back to
-// #about {
-//   li {
-//     font-family: 'Scamper Free';
-//     text-transform: lowercase;
-//   }
-// }
+#about {
+  ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    width: 600px;
+    position: relative;
+    height: 600px;
+    
+
+    li {
+      border-bottom: 1px dotted violet;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 300px;
+      text-align: right;
+      font-family: 'Scamper Free';
+      font-size: 0.85rem;
+      text-transform: lowercase;
+
+      &:nth-child(1) {
+        transform: rotate(21.18deg);
+      }
+      &:nth-child(2) {
+        transform: rotate(42.36deg);
+      }
+
+      &:nth-child(3) {
+        transform: rotate(63.54deg);
+      }
+
+      &:nth-child(4) {
+        transform: rotate(84.72deg);
+      }
+
+      &:nth-child(5) {
+        transform: rotate(105.9deg);
+      }
+
+      &:nth-child(6) {
+        transform: rotate(127.08deg);
+      }
+
+      &:nth-child(7) {
+        transform: rotate(148.26deg);
+      }
+
+      &:nth-child(8) {
+        transform: rotate(169.44deg);
+      }
+
+      &:nth-child(9) {
+        transform: rotate(190.62deg);
+      }
+
+      &:nth-child(10) {
+        transform: rotate(211.8deg);
+      }
+
+      &:nth-child(11) {
+        transform: rotate(232.98deg);
+      }
+
+      &:nth-child(12) {
+        transform: rotate(254.16deg);
+      }
+
+      &:nth-child(13) {
+        transform: rotate(275.34deg);
+      }
+
+      &:nth-child(14) {
+        transform: rotate(296.52deg);
+      }
+
+      &:nth-child(15) {
+        transform: rotate(317.7deg);
+      }
+
+      &:nth-child(16) {
+        transform: rotate(338.88deg);
+      }
+    }
+  }
+}
