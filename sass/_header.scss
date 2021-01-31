@@ -1,15 +1,76 @@
 header {
-  h1:before {
+  position: relative;
+  background-color: #DFDBE5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='44' viewBox='0 0 34 44'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M1 6.2C.72 5.55.38 4.94 0 4.36v13.28c.38-.58.72-1.2 1-1.84A12.04 12.04 0 0 0 7.2 22 12.04 12.04 0 0 0 1 28.2c-.28-.65-.62-1.26-1-1.84v13.28c.38-.58.72-1.2 1-1.84A12.04 12.04 0 0 0 7.2 44h21.6a12.05 12.05 0 0 0 5.2-4.36V26.36A12.05 12.05 0 0 0 28.8 22a12.05 12.05 0 0 0 5.2-4.36V4.36A12.05 12.05 0 0 0 28.8 0H7.2A12.04 12.04 0 0 0 1 6.2zM17.36 23H12a10 10 0 1 0 0 20h5.36a11.99 11.99 0 0 1 0-20zm1.28-2H24a10 10 0 1 0 0-20h-5.36a11.99 11.99 0 0 1 0 20zM12 1a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 14a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3.46-2a2 2 0 1 0-3.47 2 2 2 0 0 0 3.47-2zm0-4a2 2 0 1 0-3.47-2 2 2 0 0 0 3.47 2zM12 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3.46 2a2 2 0 1 0 3.47-2 2 2 0 0 0-3.47 2zm0 4a2 2 0 1 0 3.47 2 2 2 0 0 0-3.47-2zM24 43a10 10 0 1 0 0-20 10 10 0 0 0 0 20zm0-14a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3.46 2a2 2 0 1 0 3.47-2 2 2 0 0 0-3.47 2zm0 4a2 2 0 1 0 3.47 2 2 2 0 0 0-3.47-2zM24 37a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3.46-2a2 2 0 1 0-3.47 2 2 2 0 0 0 3.47-2zm0-4a2 2 0 1 0-3.47-2 2 2 0 0 0 3.47 2z'/%3E%3C/g%3E%3C/svg%3E");
+  box-shadow: 0px 8px 8px -8px rgba(0,0,0,.5);
+  min-width: 390px;
+  text-align: center;
+  padding: 1.5rem;
+
+  .container {
+    background-color: whitesmoke;
+    padding: 1.25rem 0;
+    opacity: 0.85;
+  }
+
+
+  h1:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     display: block;
     font-family: 'Rough Puff';
     content: 'Style Stage';
-    font-size: 3.5rem;
+    font-size: 5rem;
+    letter-spacing: -18px;
     text-transform: uppercase;
+    color: lavender; // for now
+    text-shadow:
+       3px 3px 0 lavenderblush,
+     -1px -1px 0 lavenderblush,  
+      1px -1px 0 lavenderblush,
+      -1px 1px 0 lavenderblush,
+       1px 1px 0 lavenderblush;
+    text-align: center;
+    z-index: -10;
+  }
+
+  h1 {
+    position: relative;
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 10px;
+    padding: 2.9rem 0 2rem 0.75rem;
+    z-index: 10;
   }
 
   h2 {
     font-family: 'Scamper Free';
-    font-size: 1.125rem;
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-family: 'Scamper Free';
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .link-github {
+    position: absolute;
+    bottom: 2.9rem;
+    right: -2.7rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 

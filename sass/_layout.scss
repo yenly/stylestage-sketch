@@ -10,14 +10,13 @@ body {
   grid-template-areas: 
     "nav"
     "header"
-    "profile"
     "main"
     "feature"
+    "profile"
     "footer";
 }
 
 // temp layout helper -- start
-header,
 main,
 aside,
 footer {
