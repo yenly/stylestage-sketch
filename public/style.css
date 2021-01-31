@@ -153,10 +153,9 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-rows: auto;
-  grid-template-areas: "nav" "header" "profile" "main" "feature" "footer";
+  grid-template-areas: "nav" "header" "main" "feature" "profile" "footer";
 }
 
-header,
 main,
 aside,
 footer {
@@ -183,16 +182,67 @@ footer {
   grid-area: feature;
 }
 
-header h1:before {
+header {
+  position: relative;
+  background-color: #DFDBE5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='44' viewBox='0 0 34 44'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M1 6.2C.72 5.55.38 4.94 0 4.36v13.28c.38-.58.72-1.2 1-1.84A12.04 12.04 0 0 0 7.2 22 12.04 12.04 0 0 0 1 28.2c-.28-.65-.62-1.26-1-1.84v13.28c.38-.58.72-1.2 1-1.84A12.04 12.04 0 0 0 7.2 44h21.6a12.05 12.05 0 0 0 5.2-4.36V26.36A12.05 12.05 0 0 0 28.8 22a12.05 12.05 0 0 0 5.2-4.36V4.36A12.05 12.05 0 0 0 28.8 0H7.2A12.04 12.04 0 0 0 1 6.2zM17.36 23H12a10 10 0 1 0 0 20h5.36a11.99 11.99 0 0 1 0-20zm1.28-2H24a10 10 0 1 0 0-20h-5.36a11.99 11.99 0 0 1 0 20zM12 1a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 14a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3.46-2a2 2 0 1 0-3.47 2 2 2 0 0 0 3.47-2zm0-4a2 2 0 1 0-3.47-2 2 2 0 0 0 3.47 2zM12 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3.46 2a2 2 0 1 0 3.47-2 2 2 0 0 0-3.47 2zm0 4a2 2 0 1 0 3.47 2 2 2 0 0 0-3.47-2zM24 43a10 10 0 1 0 0-20 10 10 0 0 0 0 20zm0-14a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3.46 2a2 2 0 1 0 3.47-2 2 2 0 0 0-3.47 2zm0 4a2 2 0 1 0 3.47 2 2 2 0 0 0-3.47-2zM24 37a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3.46-2a2 2 0 1 0-3.47 2 2 2 0 0 0 3.47-2zm0-4a2 2 0 1 0-3.47-2 2 2 0 0 0 3.47 2z'/%3E%3C/g%3E%3C/svg%3E");
+  box-shadow: 0px 8px 8px -8px rgba(0, 0, 0, 0.5);
+  min-width: 390px;
+  text-align: center;
+  padding: 1.5rem;
+}
+header .container {
+  background-color: whitesmoke;
+  padding: 1.25rem 0;
+  opacity: 0.85;
+}
+header h1:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: block;
   font-family: "Rough Puff";
   content: "Style Stage";
-  font-size: 3.5rem;
+  font-size: 5rem;
+  letter-spacing: -18px;
   text-transform: uppercase;
+  color: lavender;
+  text-shadow: 3px 3px 0 lavenderblush, -1px -1px 0 lavenderblush, 1px -1px 0 lavenderblush, -1px 1px 0 lavenderblush, 1px 1px 0 lavenderblush;
+  text-align: center;
+  z-index: -10;
+}
+header h1 {
+  position: relative;
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 10px;
+  padding: 2.9rem 0 2rem 0.75rem;
+  z-index: 10;
 }
 header h2 {
   font-family: "Scamper Free";
-  font-size: 1.125rem;
+  font-size: 1.25rem;
+}
+header p {
+  font-family: "Scamper Free";
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header .link-github {
+  position: absolute;
+  bottom: 2.9rem;
+  right: -2.7rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  text-decoration: none;
+  color: black;
+}
+header .link-github:hover {
+  text-decoration: none;
 }
 
 nav ul {
@@ -221,82 +271,104 @@ nav ul li a {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 0.9rem;
+  font-weight: bold;
   padding: 0.5rem 0.5rem 1.5rem 0;
   color: navy;
 }
 
-#about ul {
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-  width: 600px;
-  position: relative;
-  height: 600px;
-}
-#about ul li {
-  border-bottom: 1px dotted violet;
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 300px;
-  text-align: right;
-  font-family: "Scamper Free";
-  font-size: 0.85rem;
-  text-transform: lowercase;
-}
-#about ul li:nth-child(1) {
-  transform: rotate(21.18deg);
-}
-#about ul li:nth-child(2) {
-  transform: rotate(42.36deg);
-}
-#about ul li:nth-child(3) {
-  transform: rotate(63.54deg);
-}
-#about ul li:nth-child(4) {
-  transform: rotate(84.72deg);
-}
-#about ul li:nth-child(5) {
-  transform: rotate(105.9deg);
-}
-#about ul li:nth-child(6) {
-  transform: rotate(127.08deg);
-}
-#about ul li:nth-child(7) {
-  transform: rotate(148.26deg);
-}
-#about ul li:nth-child(8) {
-  transform: rotate(169.44deg);
-}
-#about ul li:nth-child(9) {
-  transform: rotate(190.62deg);
-}
-#about ul li:nth-child(10) {
-  transform: rotate(211.8deg);
-}
-#about ul li:nth-child(11) {
-  transform: rotate(232.98deg);
-}
-#about ul li:nth-child(12) {
-  transform: rotate(254.16deg);
-}
-#about ul li:nth-child(13) {
-  transform: rotate(275.34deg);
-}
-#about ul li:nth-child(14) {
-  transform: rotate(296.52deg);
-}
-#about ul li:nth-child(15) {
-  transform: rotate(317.7deg);
-}
-#about ul li:nth-child(16) {
-  transform: rotate(338.88deg);
+#about {
+  /*
+  ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    width: 600px;
+    position: relative;
+    height: 600px;
+
+
+    li {
+      border-bottom: 1px dotted violet;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 300px;
+      text-align: right;
+      font-family: 'Scamper Free';
+      font-size: 0.85rem;
+      text-transform: lowercase;
+
+      &:nth-child(1) {
+        transform: rotate(21.18deg);
+      }
+      &:nth-child(2) {
+        transform: rotate(42.36deg);
+      }
+
+      &:nth-child(3) {
+        transform: rotate(63.54deg);
+      }
+
+      &:nth-child(4) {
+        transform: rotate(84.72deg);
+      }
+
+      &:nth-child(5) {
+        transform: rotate(105.9deg);
+      }
+
+      &:nth-child(6) {
+        transform: rotate(127.08deg);
+      }
+
+      &:nth-child(7) {
+        transform: rotate(148.26deg);
+      }
+
+      &:nth-child(8) {
+        transform: rotate(169.44deg);
+      }
+
+      &:nth-child(9) {
+        transform: rotate(190.62deg);
+      }
+
+      &:nth-child(10) {
+        transform: rotate(211.8deg);
+      }
+
+      &:nth-child(11) {
+        transform: rotate(232.98deg);
+      }
+
+      &:nth-child(12) {
+        transform: rotate(254.16deg);
+      }
+
+      &:nth-child(13) {
+        transform: rotate(275.34deg);
+      }
+
+      &:nth-child(14) {
+        transform: rotate(296.52deg);
+      }
+
+      &:nth-child(15) {
+        transform: rotate(317.7deg);
+      }
+
+      &:nth-child(16) {
+        transform: rotate(338.88deg);
+      }
+    }
+  } */
 }
 
 .skip-link {
   position: absolute;
   top: 0;
   right: 0;
+  display: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
